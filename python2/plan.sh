@@ -21,6 +21,7 @@ pkg_deps=(
   core/sqlite
   core/zlib
 )
+
 pkg_build_deps=(
   core/coreutils
   core/diffutils
