@@ -1,6 +1,6 @@
 pkg_name=babel2
 pkg_distname=Babel
-pkg_version=2.4.1
+pkg_version=2.4.2
 pkg_origin=rf_pub
 pkg_license=('BSD-3-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
