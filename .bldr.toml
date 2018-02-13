@@ -3,3 +3,45 @@ plan_path = "appdirs"
 
 [babel]
 plan_path = "babel"
+
+[click]
+plan_path = "click"
+
+[flask]
+plan_path = "flask"
+
+[babel]
+plan_path = "babel"
+
+[itsdangerous]
+plan_path = "itsdangerous"
+
+[jinja2]
+plan_path = "jinja2"
+
+[markupsafe]
+plan_path = "markupsafe"
+
+[packaging]
+plan_path = "packaging"
+
+[py]
+plan_path = "pyparsing"
+
+[pytest]
+plan_path = "pytest"
+
+[python]
+plan_path = "python"
+
+[pytz]
+plan_path = "pytz"
+
+[setuptools]
+plan_path = "setuptools"
+
+[six]
+plan_path = "six"
+
+[werkzeug]
+plan_path = "werkzeug"
