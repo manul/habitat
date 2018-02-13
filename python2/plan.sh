@@ -1,5 +1,5 @@
 pkg_name=python2
-pkg_distname="Python 2"
+pkg_distname=Python
 pkg_version=2.7.13
 pkg_origin=rf_pub
 pkg_license=('Python-2.0')
