@@ -1,7 +1,7 @@
 pkg_name=babel
 pkg_distname=Babel
 pkg_version=2.4.0
-pkg_origin=python2
+pkg_origin=rf_pub
 pkg_license=('BSD-3-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
 pkg_description="Internationalization utilities"
@@ -10,7 +10,7 @@ pkg_dirname=${pkg_distname}-${pkg_version}
 pkg_source=https://pypi.org/packages/source/b/babel/${pkg_dirname}.tar.gz
 pkg_shasum=8c98f5e5f8f5f088571f2c6bd88d530e331cbbcb95a7311a0db69d3dca7ec563
 pkg_deps=(
-  rf_pub/python
+  rf_pub/python2
   rf_pub/pytz
   rf_pub/setuptools
 )
