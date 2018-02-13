@@ -1,17 +1,21 @@
-pkg_name=appdirs
+pkg_name=py
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
+pkg_version=1.4.33
 pkg_origin=rf_pub
 pkg_license=('MIT')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="Library with cross-python path, ini-parsing, io, code, log \
+facilities."
+pkg_upstream_url=http://pylib.readthedocs.org/
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/p/py/${pkg_dirname}.tar.gz
+pkg_shasum=1f9a981438f2acc20470b301a07a496375641f902320f70e31916fe3377385a9
 pkg_deps=(
-  core/python2
+  rf_pub/python
+  rf_pub/appdirs
+  rf_pub/six
+  rf_pub/packaging
+  rf_pub/setuptools
 )
 pkg_env_sep=(
   ['PYTHONPATH']=':'

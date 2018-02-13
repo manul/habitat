@@ -1,20 +1,16 @@
-pkg_name=appdirs
+pkg_name=six
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
+pkg_version=1.10.0
 pkg_origin=rf_pub
 pkg_license=('MIT')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="Python 2 and 3 compatibility utilities"
+pkg_upstream_url=https://github.com/benjaminp/six
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/s/six/${pkg_dirname}.tar.gz
+pkg_shasum=105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a
 pkg_deps=(
-  core/python2
-)
-pkg_env_sep=(
-  ['PYTHONPATH']=':'
+  rf_pub/python
 )
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)

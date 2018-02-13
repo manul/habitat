@@ -1,21 +1,27 @@
-pkg_name=appdirs
+pkg_name=click
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
+pkg_version=6.7
 pkg_origin=rf_pub
-pkg_license=('MIT')
+pkg_license=('BSD-3-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="A simple wrapper around optparse for powerful command line \
+utilities."
+pkg_upstream_url=http://github.com/mitsuhiko/click
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/c/click/${pkg_dirname}.tar.gz
+pkg_shasum=f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b
 pkg_deps=(
-  core/python2
+
+)
+pkg_build_deps=(
+  rf_pub/python
+  rf_pub/pytest
+  rf_pub/setuptools
 )
 pkg_env_sep=(
   ['PYTHONPATH']=':'
 )
+
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 

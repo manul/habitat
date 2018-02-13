@@ -1,21 +1,23 @@
-pkg_name=appdirs
+pkg_name=packaging
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
+pkg_version=16.8
 pkg_origin=rf_pub
-pkg_license=('MIT')
+pkg_license=('Apache-2.0' 'BSD-2-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="Core utilities for Python packages"
+pkg_upstream_url=https://github.com/pypa/packaging
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/p/packaging/${pkg_dirname}.tar.gz
+pkg_shasum=5d50835fdf0a7edf0b55e311b7c887786504efea1177abd7e69329a8e5ea619e
 pkg_deps=(
-  core/python2
+  rf_pub/python
+  rf_pub/pyparsing
+  rf_pub/six
 )
 pkg_env_sep=(
   ['PYTHONPATH']=':'
 )
+
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 

@@ -1,17 +1,21 @@
-pkg_name=appdirs
+pkg_name=itsdangerous
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
-pkg_origin=rf_pub
-pkg_license=('MIT')
+pkg_version=0.24
+pkg_origin=python2
+pkg_license=('BSD-3-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="Various helpers to pass trusted data to untrusted \
+environments and back."
+pkg_upstream_url=https://github.com/pallets/itsdangerous
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/i/itsdangerous/${pkg_dirname}.tar.gz
+pkg_shasum=cbb3fcf8d3e33df861709ecaf89d9e6629cff0a217bc2848f1b41cd30d360519
 pkg_deps=(
-  core/python2
+  rf_pub/python
+)
+pkg_build_deps=(
+  rf_pub/pytest
+  rf_pub/setuptools
 )
 pkg_env_sep=(
   ['PYTHONPATH']=':'

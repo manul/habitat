@@ -1,20 +1,22 @@
-pkg_name=appdirs
-pkg_distname=${pkg_name}
-pkg_version=1.4.3
-pkg_origin=rf_pub
-pkg_license=('MIT')
+pkg_name=werkzeug
+pkg_distname=Werkzeug
+pkg_version=0.12.1
+pkg_origin=python2
+pkg_license=('BSD-3-Clause')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
-pkg_description='A small Python module for determining appropriate \
-platform-specific dirs, e.g. a "user data dir".'
-pkg_upstream_url=https://github.com/ActiveState/appdirs
+pkg_description="The Swiss Army knife of Python web development"
+pkg_upstream_url=http://werkzeug.pocoo.org/
 pkg_dirname=${pkg_distname}-${pkg_version}
-pkg_source=https://pypi.org/packages/source/a/appdirs/${pkg_dirname}.tar.gz
-pkg_shasum=9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92
+pkg_source=https://pypi.org/packages/source/w/werkzeug/${pkg_dirname}.tar.gz
+pkg_shasum=6716830febe9808bb7521fd26db3b398450cbed0886b2b4bea678b87340f534e
 pkg_deps=(
-  core/python2
+  rf_pub/python
 )
-pkg_env_sep=(
-  ['PYTHONPATH']=':'
+pkg_build_deps=(
+  rf_pub/pytest
+  # circular dep
+  # rf_pub/requests
+  rf_pub/setuptools
 )
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)

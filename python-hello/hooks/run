@@ -1,0 +1,3 @@
+#!/bin/sh
+export FLASK_APP={{pkg.svc_path}}/app.py
+flask run --host=0.0.0.0 2>&1
