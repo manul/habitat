@@ -1,6 +1,6 @@
 pkg_name=appdirs
 pkg_distname=${pkg_name}
-pkg_version=1.4.3
+pkg_version=1.4.2
 pkg_origin=recordedfuture
 pkg_license=('MIT')
 pkg_maintainer="George Marshall <george@georgemarshall.name>"
