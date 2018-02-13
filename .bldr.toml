@@ -1,0 +1,5 @@
+[appdirs]
+plan_path = "appdirs"
+
+[babel]
+plan_path = "babel"
